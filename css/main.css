@@ -2,6 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
 }
 
 body {
@@ -10,7 +16,6 @@ body {
 /* Navbar styling */
 
 header .nav-bar {
-    height: 60px;
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -20,6 +25,7 @@ header .logo {
     float: left;
     width: 40%;
     height: 100%;
+    padding: 15px 0;
 }
 header .logo div {
     display: inline-block;
@@ -29,7 +35,6 @@ header .logo div {
 header .logo a {
     text-decoration: none;
     margin: 0;
-    line-height: 60px;
     font-size: 24px;
     font-weight: 800;
     color: #ff305b;
@@ -38,10 +43,12 @@ header .links {
     float: left;
     width: 60%;
     overflow: hidden;
+    padding: 20px 0;
+
 }
 
 .links-container {
-    width: 75%;
+    width: 100%;
     text-align: center;
     float: right;
 }
@@ -49,7 +56,6 @@ header .links {
 header .links ul a {
     text-decoration: none;
     margin: 0;
-    line-height: 60px;
     color: #fff;
     font-size: 16px;
     font-weight: 300;
@@ -68,8 +74,11 @@ header .links ul li {
     list-style: none;
     float: left;
     padding: 0 10px;
-    
-} 
+}
+
+.links a.home-link {
+    color: #ff305b;
+}
 
 /* Home Section */
 
@@ -82,7 +91,7 @@ header {
     z-index: 1;
 }
 
-header .color-layer {
+header .overlay {
     height: 100vh;
     width: 100%;
     position:absolute;
@@ -91,7 +100,19 @@ header .color-layer {
 }
 
 header .home {
-    height: calc(100vh - 60px);
     width: 100%;
+    text-align: center;
+    color: #fff;
 }
 
+.home h4 {
+    float: left;
+    position: relative;
+}
+.a {
+    float: left;
+}
+.b {
+    overflow: hidden;
+    width:50%;
+}

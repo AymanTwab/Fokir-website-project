@@ -1,23 +1,9 @@
-body{
-    overflow: hidden;
-    width: 200px;
-    margin: auto;
-    text-align: center;
-    background-color: black;
-}
 
-.im {
-    font-size: 27px;
-    float: left;
-    margin-top: 100px;
-    margin-right: 20px;
-    color: #fff;
-}
+
 
 .a {
-    float: left;
     overflow: hidden;
-    display: flex;
+    float: left;
     background-color:#000;
     color: #fff;
     width: 0;
@@ -27,7 +13,6 @@ body{
     animation-iteration-count: infinite;
     border-right: 2px #fff solid;
     position: relative;
-    margin-top: 100px;
 }
 
 .t1 {
@@ -98,48 +83,8 @@ body{
     88.88% {
         width: 102px;
     }
-    /* 99.99% {
-        width: 102px;
-    } */
+
 }
-
-/* @keyframes t {
-    0% {
-        visibility: hidden;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: visible;
-    }
-
-    62.5% {
-        visibility: visible;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-} */
 
 
 @keyframes t {
