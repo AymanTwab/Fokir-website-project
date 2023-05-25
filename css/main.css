@@ -1,24 +1,34 @@
 /* General styling */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+    width: 1170px;
+    margin: 0 auto;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    height: 10000px;
 }
+
 /* Navbar styling */
+
+header {
+    position: relative;
+}
 
 header .nav-bar {
     width: 80%;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: absolute;
+    text-align: center;
+    left: 10%;
 }
 
 header .logo {
@@ -27,11 +37,12 @@ header .logo {
     height: 100%;
     padding: 15px 0;
 }
+
 header .logo div {
     display: inline-block;
     vertical-align: bottom;
-
 }
+
 header .logo a {
     text-decoration: none;
     margin: 0;
@@ -39,17 +50,17 @@ header .logo a {
     font-weight: 800;
     color: #ff305b;
 }
+
 header .links {
     float: left;
     width: 60%;
     overflow: hidden;
     padding: 20px 0;
-
 }
 
 .links-container {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     float: right;
 }
 
@@ -59,15 +70,16 @@ header .links ul a {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-header .links ul a:hover{
+header .links ul a:hover {
     color: #ff305b;
 }
 
 header .links ul {
     overflow: hidden;
+    float: right;
 }
 
 header .links ul li {
@@ -87,32 +99,383 @@ header {
     height: 100vh;
     width: 100%;
     background-image: url(../images/slider/slider-02.jpg);
-    background-size:cover ;
+    background-size: cover;
     z-index: 1;
 }
 
 header .overlay {
     height: 100vh;
     width: 100%;
-    position:absolute;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
 
 header .home {
+    display: flex;
+    height: auto;
     width: 100%;
     text-align: center;
     color: #fff;
+    height: 100%;
+    align-items: center;
 }
 
-.home h4 {
-    float: left;
-    position: relative;
+.home h1 {
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: bold;
 }
-.a {
-    float: left;
+
+.home h3 {
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: "Source Sans Pro", sans-serif;
 }
+
 .b {
+    box-sizing: border-box;
+    height: 100px;
     overflow: hidden;
-    width:50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b .pro-web {
+    position: relative;
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.a {
+    /* margin-top: 10px; */
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    font-weight: 300;
+}
+
+/* about Section */
+
+.about-section {
+    padding: 80px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+}
+
+.test {
+    margin-left: 8.33333333%;
+    width: 33.33333333%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.about-section .about-img {
+    width: auto;
+    float: left;
+    box-shadow: 0 0 0 8px #555555 inset;
+    border-radius: 5px;
+}
+
+.img-container {
+    transform: translateY(24px) translateX(24px);
+}
+
+.about-section .about-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-data {
+    width: 60%;
+    float: left;
+    padding-left: 70px;
+}
+
+.about-section .about-data h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    position: relative;
+    color: #333;
+}
+
+.about-section .about-data h2::before {
+    content: "";
+    width: 4px;
+    height: 24px;
+    background-color: #ff305b;
+    position: absolute;
+    bottom: -1;
+    left: 0;
+}
+
+.about-section .about-data p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 25px;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.about-contact ul li {
+    color: #555555;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+    white-space: nowrap;
+}
+
+.about-contact ul li.first-row {
+    list-style: none;
+    float: left;
+    width: 40%;
+}
+
+.about-contact ul li.second-row {
+    list-style: none;
+    float: left;
+    width: 60%;
+}
+
+.about-contact ul li span {
+    font-weight: 500;
+}
+
+.about-contact .about-bottoms a {
+    background-color: #ff305b;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.about-contact .about-bottoms a:hover {
+    background-color: #ec2403;
+}
+
+.about-bottoms i {
+    color: #fff;
+    padding-left: 10px;
+}
+
+/* our services section */
+
+.our-services {
+    padding: 80px 0 40px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+.our-services .services-data {
+    overflow: hidden;
+    text-align: center;
+}
+
+.our-services .services-data h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.our-services .services-data h2::after {
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    height: 1px;
+    width: 160px;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    margin: 0 auto;
+}
+
+.our-services .services-data h2::before {
+    content: "";
+    position: absolute;
+    border: #ff305b solid;
+    border-width: 1px 0;
+    height: 1px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 4px 0 5px;
+}
+
+.our-services .services-items {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 30px 10px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.our-services .services-items:hover {
+    background-color: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.our-services .services-items i {
+    font-size: 36px;
+    color: #ff305b;
+    transition: 0.3s;
+}
+
+.our-services .services-items:hover i {
+    font-size: 40px;
+    color: #ff305b;
+}
+
+i:hover {
+    color: #333;
+}
+
+.our-services .services-items h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 70px 0;
+}
+
+.portfolio .our-portfolio h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.portfolio .our-portfolio h2::after {
+    content: "";
+    position: absolute;
+    background-color: #ff305b;
+    height: 1px;
+    width: 160px;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    margin: 0 auto;
+}
+
+.portfolio .our-portfolio h2::before {
+    content: "";
+    position: absolute;
+    border: #ff305b solid;
+    border-width: 1px 0;
+    height: 1px;
+    width: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 4px 0 5px;
+}
+
+.our-portfolio .portfolio-links {
+    margin: 50px 0;
+}
+
+.our-portfolio .portfolio-links a {
+    text-decoration: none;
+    padding: 3px 12px;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.our-portfolio .portfolio-links .active {
+    color: #ff305b;
+}
+
+.portfolio .our-portfolio {
+    text-align: center;
+}
+
+.image-overlay {
+    width: 94%;
+    height: 92%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.image-overlay i {
+    color: #ff305b;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.portfolio-images {
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio-image {
+    width: 33.33%;
+    float: left;
+    padding: 1%;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+}
+
+/* counter Section */
+
+.counter {
+    background-color: #f1f1f1;
+    padding: 70px 0;
+}
+
+.counter-items {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.counter-items .counter-item {
+    width: 25%;
+    float: left;
+}
+
+.counter-items .counter-item h3{
+    font-size: 26px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 15px;
+}
+.counter-items .counter-item h5{
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.counter-items .counter-item i{
+color: #ff305b;
+font-size: 26px;
+margin-bottom: 15px;
+
 }
