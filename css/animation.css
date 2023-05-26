@@ -27,8 +27,7 @@
     margin: 0;
     visibility: hidden;
     position: absolute;
-    /* display: inline; */
-
+color: #fff;
 }
 .t2 {
     animation-name: t;
@@ -39,7 +38,7 @@
     visibility: hidden;
     position: absolute;
     animation-delay: 3s;
-    /* display: inline; */
+    color: #fff;
 
 }
 .t3 {
@@ -51,7 +50,7 @@
     visibility: hidden;
     position: absolute;
     animation-delay: 6s;
-    /* display: inline; */
+color: #fff;
 
 }
 
