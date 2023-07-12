@@ -1,4 +1,7 @@
+/* ------------------------------------------------- */
 /* General styling */
+/* ------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +16,15 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #333;
+    min-width: 300px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 h2.sec-head {
@@ -48,38 +60,25 @@ h2.sec-head::before {
     padding: 4px 0 5px;
 }
 
-/* Navbar styling */
+/* ------------------------------------------------- */
+/* Navbar */
+/* ------------------------------------------------- */
 
-header {
+nav {
     position: relative;
+    z-index: 10;
 }
 
-header .nav-bar {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-    position: absolute;
-    left: 10%;
-}
-
-header .logo {
+nav .logo {
     float: left;
     width: 20%;
-    height: 100%;
     padding: 15px 0;
 }
 
-header .logo div {
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-header .logo a {
-    text-decoration: none;
-    margin: 0;
+nav .logo a {
+    color: #ff305b;
     font-size: 24px;
     font-weight: 800;
-    color: #ff305b;
 }
 
 .links .links-icon {
@@ -90,48 +89,40 @@ header .logo a {
     padding-right: 10%;
 }
 
-header .links {
+nav .links {
     float: left;
     width: 80%;
-    overflow: hidden;
     padding: 20px 0;
 }
 
-.links-container {
-    width: 100%;
-    /* text-align: center; */
-    float: right;
-}
-
-header .links ul a {
-    text-decoration: none;
-    margin: 0;
+nav .links ul a {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
     transition: 0.3s;
 }
 
-header .links ul a:hover {
+nav .links ul a:hover {
     color: #ff305b;
 }
 
-header .links ul {
-    overflow: hidden;
+nav .links ul {
     float: right;
 }
 
-header .links ul li {
+nav .links ul li {
     list-style: none;
     float: left;
     padding: 0 10px;
 }
 
-.links a.home-link {
+.links a.active {
     color: #ff305b;
 }
 
-/* Home Section */
+/* ------------------------------------------------- */
+/* Home */
+/* ------------------------------------------------- */
 
 header {
     position: relative;
@@ -152,13 +143,18 @@ header .overlay {
 }
 
 header .home {
-    height: auto;
-    width: 100%;
-    text-align: center;
+
     color: #fff;
-    height: 100%;
+    text-align: center;
     align-items: center;
-    padding: 40vh 0;
+    padding-top: 40vh;
+}
+
+.home h3 {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .home h1 {
@@ -167,33 +163,28 @@ header .home {
     font-weight: bold;
 }
 
-.home h3 {
-    font-weight: 600;
-    margin: 0 0 10px;
-    font-family: "Source Sans Pro", sans-serif;
-    color: #fff;
-}
 
-.b {
-    box-sizing: border-box;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
+.animation {
+    font-size: 26px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.b .pro-web {
-    position: relative;
-    overflow: hidden;
-    font-size: 26px;
-    font-weight: 300;
+.animation .pro-web {
     color: #fff;
+    font-weight: 300;
 }
 
-.a {
-    display: inline-block;
+.motion {
+    color: #fff;
+    overflow: hidden;
+    height: 40px;
+    animation: test 9s infinite;
+    border-right: 2px #fff solid;
+    text-align: left;
+    position: relative;
     display: flex;
     align-items: center;
     padding-left: 7px;
@@ -202,19 +193,14 @@ header .home {
 
 /* about Section */
 
-.about-section {
-    width: 100%;
-    padding: 80px 0;
-    box-sizing: border-box;
+.about-sections {
+    padding: 0 10px;
     overflow: hidden;
-    text-align: left;
 }
 
-.about-sections {
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
+.img-container {
     overflow: hidden;
+    position: relative;
 }
 
 .about-section .about-img {
@@ -223,7 +209,6 @@ header .home {
     float: left;
     box-shadow: 0 0 0 8px #555555 inset;
     border-radius: 5px;
-    position: relative;
     margin-bottom: 30px;
 }
 
@@ -233,10 +218,9 @@ header .home {
     height: 0;
     position: absolute;
     border-radius: 5px;
-    transition: .7s ease;
+    transition: all .7s ease;
     opacity: 0;
     bottom: 0;
-
 }
 
 .about-sections .about-img:hover .img-overlay {
@@ -245,18 +229,20 @@ header .home {
 }
 
 .about-sections .img-overlay .img-icons {
-    width: 100%;
-    height: 100%;
     padding-top: 55%;
     text-align: center;
 }
 
 .about-sections .img-overlay .img-icons i {
-    margin: 10px;
     color: #fff;
+    margin: 10px;
     font-size: 20px;
+    transition: color 0.3s;
 }
 
+.about-sections .img-overlay .img-icons i:hover {
+    color: #ff305b;
+}
 
 
 .img-container {
@@ -275,6 +261,7 @@ header .home {
 }
 
 .about-section .about-data h2 {
+    color: #333;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 34px;
     font-weight: 600;
@@ -282,7 +269,6 @@ header .home {
     margin-bottom: 25px;
     padding-left: 15px;
     position: relative;
-    color: #333;
 }
 
 .about-section .about-data h2::before {
@@ -328,21 +314,20 @@ header .home {
     font-weight: 500;
 }
 
-.about-contact .about-bottoms a {
+.about-contact .about-buttons a {
     display: inline-block;
-    background-color: #ff305b;
-    padding: 10px 15px;
-    height: 40px;
-    margin-top: 10px;
-    text-decoration: none;
     color: #fff;
+    background-color: #ff305b;
+    height: 40px;
+    padding: 10px 15px;
+    margin-top: 10px;
     border-radius: 4px;
     margin-right: 10px;
     transition: 0.3s;
 
 }
 
-.about-contact .about-bottoms a:hover {
+.about-contact .about-buttons a:hover {
     background-color: #ec2403;
 }
 
@@ -353,56 +338,60 @@ header .home {
 
 /* our services section */
 
-.our-services {
-    padding: 80px 0 40px;
-    box-sizing: border-box;
+.services {
     background-color: #f1f1f1;
 }
 
-.our-services .services-data {
-    overflow: hidden;
-    text-align: center;
+.services .services-items {
+    padding: 0 2%;
 }
 
-.services-items {}
+.services .services-data {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
 
-.our-services .services-item {
+.services .services-item {
+    overflow: hidden;
     width: 25%;
     float: left;
     text-align: center;
-    padding: 30px 10px;
+    padding: 40px 15px;
     margin-bottom: 50px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.our-services .services-item:hover {
+.services .services-item:hover {
     background-color: #fff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.our-services .services-item i {
+.services .services-item i {
+    display: block;
     font-size: 36px;
     color: #ff305b;
     transition: 0.3s;
 }
 
-.our-services .services-item:hover i {
-    font-size: 36px;
-    color: #ff305b;
+.services .services-item:hover i {
+    transform: scale(1.2);
 }
 
-i:hover {
-    color: #333;
-}
-
-.our-services .services-item h3 {
+.services .services-item h3 {
     font-size: 24px;
     margin: 20px 0;
 }
 
+.services-item p {
+    line-height: 25px;
+    color: #555555;
+}
+
 /* Portfolio Section */
-.portfolio {
-    padding: 70px 0;
+
+.portfolio .our-portfolio {
+    text-align: center;
 }
 
 .our-portfolio .portfolio-links {
@@ -412,7 +401,6 @@ i:hover {
 .our-portfolio .portfolio-links ul {
     width: 60%;
     margin: auto;
-    text-align: center;
     overflow: hidden;
 }
 
@@ -422,7 +410,6 @@ i:hover {
     float: left;
     margin: auto;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .our-portfolio .portfolio-links a {
@@ -437,17 +424,33 @@ i:hover {
     color: #ff305b;
 }
 
-.portfolio .our-portfolio {
-    text-align: center;
+.portfolio-image img {
+    width: 100%;
+}
+
+.portfolio-image {
+    width: 32.33%;
+    float: left;
+    margin: .5%;
+    position: relative;
+    overflow: hidden;
 }
 
 .image-overlay {
-    width: 94%;
-    height: 92%;
+    width: 100%;
+    height: 98.5%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.portfolio-images {
+    overflow: hidden;
 }
 
 .image-overlay i {
@@ -458,32 +461,10 @@ i:hover {
     right: 15px;
 }
 
-.image-overlay:hover {
-    opacity: 1;
-}
-
-.portfolio-images {
-    width: 100%;
-    overflow: hidden;
-}
-
-.portfolio-image {
-    width: 33.33%;
-    float: left;
-    padding: 1%;
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-image img {
-    width: 100%;
-}
-
 /* counter Section */
 
 .counter {
     background-color: #f1f1f1;
-    padding: 70px 0;
 }
 
 .counter-items {
@@ -517,12 +498,11 @@ i:hover {
 
 /* feedback section */
 
-.client-feedback {
-    padding: 60px 0;
+.client {
     text-align: center;
 }
 
-.client-feedback .card {
+.client .card {
     overflow: hidden;
     position: relative;
     background-color: #f1f1f1;
@@ -530,11 +510,10 @@ i:hover {
     margin: auto;
     border-radius: 5px;
     padding: 40px;
-    position: relative;
     text-align: left;
 }
 
-.client-feedback .card .decoration {
+.client .card .decoration {
     background-color: #ff305b;
     width: 300px;
     height: 300px;
@@ -545,63 +524,67 @@ i:hover {
     z-index: 1;
 }
 
-.client-feedback .card .client-image {
+.client .card .client-image {
+    width: 100px;
     float: left;
     margin: 10px;
-    width: 100px;
     overflow: hidden;
     z-index: 2;
     position: relative;
 }
 
-.client-feedback .card .client-image img {
+.client .card .client-image img {
     width: 100%;
     border-radius: 50%;
-    position: relative;
 }
 
-.client-feedback .card .feedback {
+.client .card .feedback {
     float: left;
     width: 70%;
     padding-left: 20px;
 }
 
-.client-feedback .card .feedback h3 {
+.client .card .feedback h3 {
     font-weight: 600;
-    margin: 0 0 10px;
+    margin-bottom: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #333;
     font-size: 26px;
-    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 
-
-.client-feedback .card .feedback p {
+.client .card .feedback p {
     font-size: 16px;
     font-style: italic;
     line-height: 25px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 
-.client-feedback .card .feedback h4 a {
+.client .card .feedback h4 a {
     text-decoration: none;
     color: #777777;
     font-size: 15px;
     margin-left: 5px;
+    position: relative;
+    z-index: 2;
 }
 
-.client-feedback .card .feedback h4 {
+.client .card .feedback h4 {
     margin-bottom: 10px;
 
 }
 
-.client-feedback .card .feedback h4 i {
+.client .card .feedback h4 i {
     font-size: 14px;
     color: #777777;
-
+    position: relative;
+    z-index: 2;
 }
 
-.client-feedback .card .feedback .review-rating i {
+.client .card .feedback .review-rating i {
     color: #f1c30d;
     margin-bottom: 12px;
 }
@@ -626,10 +609,9 @@ button.dot2 {
 
 /* Blog Section */
 
-.our-blog {
+.blog {
     text-align: center;
     background-color: #f1f1f1;
-    padding: 70px 0;
 }
 
 .blog-items {
@@ -641,10 +623,6 @@ button.dot2 {
     width: 33.33%;
     padding: 0 15px;
     text-align: left;
-}
-
-.blog-content {
-    padding: 15px;
 }
 
 .blog-item .item-bg {
@@ -659,15 +637,18 @@ button.dot2 {
     width: 100%;
 }
 
+.blog-content {
+    padding: 15px;
+}
+
 .blog-item iframe {
     width: 100%;
     height: 200px;
 }
 
-
 .blog-content div,
-h3,
-p {
+.blog-content h3,
+.blog-content p {
     margin-bottom: 15px;
     color: #333;
 }
@@ -710,37 +691,33 @@ p {
 
 /* Contact us */
 
-.contact-us {
+.contact {
     text-align: center;
-    padding: 70px;
 }
 
-.contact-us form {
+.contact form {
     width: 80%;
     margin: auto;
     text-align: left;
 
 }
 
-.contact-us form .w40 {
+.contact form .w40 {
     width: 47.5%;
     height: 40px;
     float: left;
     margin-bottom: 25px;
 }
 
-.contact-us form .m5 {
+.contact form .m5 {
     margin-right: 5%;
-
 }
 
-
-.contact-us form .w100 {
+.contact form .w100 {
     width: 100%;
     height: 40px;
     margin: auto;
     margin-bottom: 25px;
-
 }
 
 textarea {
@@ -762,7 +739,7 @@ textarea {
     outline: none;
 }
 
-.contact-us button {
+.contact button {
     width: auto;
     height: 40px;
     border-radius: 5px;
@@ -775,7 +752,7 @@ textarea {
     transition: .3s ease-in-out;
 }
 
-.contact-us button:hover {
+.contact button:hover {
     background-color: #ec2403;
 }
 
@@ -791,6 +768,11 @@ footer {
     color: #fff;
     font-size: 16px;
     margin: 10px;
+    transition: 0.3s;
+}
+
+.footer-icons a:hover {
+    color: #ff305b;
 }
 
 .copy-right {

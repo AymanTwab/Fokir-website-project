@@ -1,132 +1,83 @@
 /* // X-Large devices (large desktops, 1200px and up) */
+
+
 @media (max-width: 1200px) {
 
+    /* ------------------------------------------------- */
+    /* Services */
+    /* ------------------------------------------------- */
 
-    .our-services .services-item h3 {
+    .services .services-item h3 {
         font-size: 20px;
     }
 
+    /* ------------------------------------------------- */
+    /* Portfolio */
+    /* ------------------------------------------------- */
 
-.our-services .services-items:hover {
-    background-color: #fff;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    .our-portfolio .portfolio-links ul {
+        width: 80%;
+    }
 }
-
-.our-portfolio .portfolio-links ul {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
-}
-
-.our-portfolio .portfolio-links li {
-    list-style: none;
-    width: 25%;
-    float: left;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.our-portfolio .portfolio-links a {
-    margin: 10px 0;
-
-}
-
 
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
 
+    /* ------------------------------------------------- */
+    /* About */
+    /* ------------------------------------------------- */
 
-.about-sections {
-    margin: auto;
-    width: 100%;
-    padding: 60px 0;
-}
-
-.about-section .about-img {
-    width: 46%;
-    box-shadow: none;
-    margin: 0 2%;
-}
-
-.about-data {
-    margin: 0 2%;
-    width: 46%;
-    padding-left:  0px;
-
-}
-
-.about-contact ul li {
-    font-size: 14px;
-}
-
-.img-container {
-    transform: none;
-}
-
-
-
-.about-contact ul li.first-row {
-    list-style: none;
-    float: left;
-    width: 40%;
-}
-
-.about-contact ul li.second-row {
-    list-style: none;
-    float: left;
-    width: 60%;
-}
-
-.services-items {
-    width: 100%;
+    .about-sections {
+        padding: 60px 0;
     }
-.our-services .services-item {
-    width: 40%;
-    margin: 0 5%;
+
+    .about-section .about-img {
+        width: 46%;
+        box-shadow: none;
+        margin: 0 2%;
+    }
+
+    .about-data {
+        margin: 0 2%;
+        width: 46%;
+        padding-left: 0px;
+
+    }
+
+    .about-contact ul li {
+        font-size: 14px;
+    }
+
+    .img-container {
+        transform: none;
+    }
+
+    /* ------------------------------------------------- */
+    /* Services */
+    /* ------------------------------------------------- */
+
+    .services .services-item {
+        width: 40%;
+        margin: 0 5%;
+        margin-bottom: 25px;
+    }
+
+    /* ------------------------------------------------- */
+    /* Portfolio */
+    /* ------------------------------------------------- */
+
+    .portfolio-image {
+        width: 48%;
+        margin: 1%;
+    }
 }
 
-.our-services .services-items:hover {
-    background-color: #fff;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
-}
-
-.our-portfolio .portfolio-links ul {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    overflow: hidden;
-}
-
-.our-portfolio .portfolio-links li {
-    list-style: none;
-    width: 25%;
-    float: left;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.our-portfolio .portfolio-links a {
-    margin: 10px 0;
-
-}
-
-.portfolio-image {
-    width: 45%;
-    margin:0 2.5%;
-}
-
-.image-overlay {
-    width: 96%;
-    height: 93%;
-
-}
-
-}
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+
+    /* ------------------------------------------------- */
+    /* Navbar */
+    /* ------------------------------------------------- */
 
     .links-container {
         display: none;
@@ -136,121 +87,94 @@
         display: block;
     }
 
+    /* ------------------------------------------------- */
+    /* About */
+    /* ------------------------------------------------- */
+
     .about-sections {
-        margin: auto;
-        width: 100%;
         padding: 40px 0;
     }
 
     .about-section .about-img {
         width: 100%;
-        box-shadow: none;
         margin: 30px auto;
     }
 
     .about-data {
         width: 100%;
         margin: auto;
-    padding-left: 0;
-        
     }
 
-    .img-container {
-        transform: none;
-    }
+    /* ------------------------------------------------- */
+    /* Services */
+    /* ------------------------------------------------- */
 
-
-
-    .about-contact ul li.first-row {
-        list-style: none;
-        float: left;
-        width: 40%;
-    }
-
-    .about-contact ul li.second-row {
-        list-style: none;
-        float: left;
-        width: 60%;
-    }
-
-    .services-items {
-        width: 100%;
-        }
-    .our-services .services-item {
+    .services .services-item {
         width: 70%;
         margin: 0 15%;
+        margin-bottom: 25px;
     }
 
-    .our-services .services-items:hover {
-        background-color: #fff;
-        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    /* ------------------------------------------------- */
+    /* Portfolio */
+    /* ------------------------------------------------- */
+    .portfolio-image {
+        width: 70%;
+        margin: 1% 15%;
     }
 
     .our-portfolio .portfolio-links ul {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        overflow: hidden;
+        width: 100%;
     }
 
-    .our-portfolio .portfolio-links li {
-        list-style: none;
-        width: 25%;
-        float: left;
-        margin: auto;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .our-portfolio .portfolio-links a {
-        margin: 10px 0;
-
-    }
-
-    .portfolio-image {
-        width: 70%;
-        margin:0 15%;
-    }
-
-    .image-overlay {
-        width: 96%;
-        height: 94%;
-
-    }
+    /* ------------------------------------------------- */
+    /* Counter */
+    /* ------------------------------------------------- */
 
     .counter-items .counter-item {
         width: 100%;
         margin-top: 50px;
     }
 
-    .client-feedback .card {
-        width: 70%;
+    /* ------------------------------------------------- */
+    /* Client */
+    /* ------------------------------------------------- */
+
+    .client .card {
         padding: 15px;
     }
 
-    .client-feedback .card .client-image {
+    .client .card .client-image {
         margin: 30px 35%;
         width: 30%;
 
     }
 
-    .client-feedback .card .feedback {
+    .client .card .feedback {
         float: left;
         width: 90%;
         padding-left: 5px;
     }
 
+    /* ------------------------------------------------- */
+    /* Blog */
+    /* ------------------------------------------------- */
+
+
     .blog-item {
         width: 70%;
-        padding: 0 15px;
         margin: 20px 15%;
     }
 
-    .contact-us form {
+    /* ------------------------------------------------- */
+    /* Contact */
+    /* ------------------------------------------------- */
+
+    .contact form {
         width: 100%;
     }
 
-    .contact-us form .w40 {
+    .contact form .w40 {
         width: 100%;
     }
 
@@ -259,129 +183,132 @@
 
 /*  Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    .links-container {
-        display: none;
+
+    /* ------------------------------------------------- */
+    /* Home */
+    /* ------------------------------------------------- */
+
+    .home h1 {
+        font-size: 40px;
     }
 
-    .links .links-icon {
-        display: block;
+    .animation {
+        font-size: 18px;
     }
+
+    .motion {
+        padding-left: 5px;
+    }
+
+    /* Animation */
+
+    @keyframes test {
+
+        0%,
+        33.33%,
+        66.66%,
+        99.99% {
+            width: 0;
+        }
+
+        11.11%,
+        22.22% {
+            width: 90px;
+        }
+
+        44.44%,
+        55.55% {
+            width: 95px;
+        }
+
+        77.77%,
+        88.88% {
+            width: 75px;
+        }
+    }
+
+
+    /* ------------------------------------------------- */
+    /* About */
+    /* ------------------------------------------------- */
 
     .about-sections {
-        margin: auto;
-        width: 100%;
         padding: 40px 0;
     }
 
-    .about-section .about-img {
-        width: 100%;
-        box-shadow: none;
-        margin: 30px auto;
-    }
-
-    .about-data {
-        width: 100%;
-        margin: auto;
-    padding-left: 0;
-        
-    }
-
-    .img-container {
-        transform: none;
-    }
-
-
-    .about-contact ul li.first-row {
-        list-style: none;
-        float: left;
-        width: 100%;
-    }
-
+    .about-contact ul li.first-row,
     .about-contact ul li.second-row {
-        list-style: none;
-        float: left;
         width: 100%;
     }
- 
 
-    .our-services .services-item {
+    /* ------------------------------------------------- */
+    /* Services */
+    /* ------------------------------------------------- */
+
+    .services .services-item {
         width: 80%;
         margin: 0 10%;
+        margin-bottom: 25px;
     }
 
-    .our-services .services-items:hover {
-        background-color: #fff;
-        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    }
 
-    .our-portfolio .portfolio-links ul {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .our-portfolio .portfolio-links li {
-        list-style: none;
-        width: 100%;
-        float: left;
-        margin: auto;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .our-portfolio .portfolio-links a {
-        margin: 10px 0;
-
-    }
+    /* ------------------------------------------------- */
+    /* Portfolio */
+    /* ------------------------------------------------- */
 
     .portfolio-image {
         width: 80%;
-        margin: 0 10%
-        ;
+        margin: 1% 10%;
+    }
+    .our-portfolio .portfolio-links li {
+        width:50%;
+        
     }
 
-    .image-overlay {
-        width: 98%;
-        height: 96%;
 
-    }
+    /* ------------------------------------------------- */
+    /* Counter */
+    /* ------------------------------------------------- */
 
     .counter-items .counter-item {
         width: 100%;
         margin-top: 50px;
     }
 
-    .client-feedback .card {
+    /* ------------------------------------------------- */
+    /* Client */
+    /* ------------------------------------------------- */
+
+    .client .card {
         width: 90%;
-        padding: 15px;
     }
 
-    .client-feedback .card .client-image {
-        margin: 0 25%;
-        width: 50%;
+    .client .card .client-image {
+        margin: 0 35%;
+        width: 30%;
 
     }
 
-    .client-feedback .card .feedback {
+    .client .card .feedback {
         float: left;
         width: 90%;
         padding-left: 5px;
     }
 
+    /* ------------------------------------------------- */
+    /* Blog */
+    /* ------------------------------------------------- */
+
     .blog-item {
         width: 100%;
-        padding: 0 15px;
         margin: 20px 0;
     }
 
-    .contact-us form {
-        width: 100%;
+    /* ------------------------------------------------- */
+    /* Blog */
+    /* ------------------------------------------------- */
+
+    .copy-right{
+        font-size: 12px;
     }
-
-    .contact-us form .w40 {
-        width: 100%;
-    }
-
-
 }

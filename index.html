@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header>
-        <div class="overlay"></div>
-        <div class="nav-bar">
+
+    <nav class="navbar">
+        <div class="container">
             <div class="logo">
                 <div>
                     <a href="index.html">Fokir</a>
@@ -31,7 +31,7 @@
                 <div class="links-icon"><i class="fa-solid fa-bars"></i></div>
                 <div class="links-container">
                     <ul>
-                        <li class="link"><a class="home-link" href="">Home</a></li>
+                        <li class="link"><a class="active" href="">Home</a></li>
                         <li class="link"><a href="">About</a></li>
                         <li class="link"><a href="">Services</a></li>
                         <li class="link"><a href="">Portfolio</a></li>
@@ -42,18 +42,21 @@
                 </div>
             </div>
         </div>
-        <div class="home">
-            <div class="container">
-
+    </nav>
+    <!-- start header -->
+    <header>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="home">
                 <div class="content">
                     <h3>Hello i'm</h3>
                     <h1>ALEX SMITH</h1>
-                    <div class="b">
+                    <div class="animation">
                         <h4 class="pro-web">Professional Web </h4>
-                        <span class="a">
-                            <p class="t1">Designer</p>
-                            <p class="t2">Developer</p>
-                            <p class="t3">Ayman</p>
+                        <span class="motion">
+                            <p class="text1">Designer</p>
+                            <p class="text2">Developer</p>
+                            <p class="text3">Ayman</p>
                         </span>
 
                     </div>
@@ -61,6 +64,9 @@
             </div>
         </div>
     </header>
+    <!-- End header -->
+
+    <!-- start about -->
     <section class="about-section">
         <div class="container">
             <div class="about-sections">
@@ -115,7 +121,7 @@
                                 example@gmail.com
                             </li>
                         </ul>
-                        <div class="about-bottoms">
+                        <div class="about-buttons">
                             <a href="#">Download CV <i class="fa-solid fa-download"></i></a>
                             <a href="#">Hire Me <i class="fa-solid fa-paper-plane"></i></a>
                         </div>
@@ -124,13 +130,16 @@
             </div>
         </div>
     </section>
-    <section class="our-services">
+    <!-- End about -->
+
+    <!-- start services -->
+    <section class="services">
         <div class="container">
             <div class="services-data">
                 <div class="services-header">
                     <h2 class="sec-head">Our Services</h2>
-                    <div class="services-items">
-                    </div>
+                </div>
+                <div class="services-items">
                     <div class="services-item">
                         <i class="icon icofont-calculations"></i>
                         <h3>UI/UX DESIGN</h3>
@@ -149,7 +158,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
                             necstatibus.</p>
                     </div>
-                    <div class="icon services-item">
+                    <div class="icon services-item item-x">
                         <i class="icofont-ui-settings"></i>
                         <h3>UI/UX DESIGN</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis
@@ -157,8 +166,10 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
+    <!-- End services -->
+
+    <!-- start portfolio -->
     <section class="portfolio">
         <div class="container">
             <div class="our-portfolio">
@@ -200,6 +211,9 @@
             </div>
         </div>
     </section>
+    <!-- End portfolio -->
+
+    <!-- start counter -->
     <section class="counter">
         <div class="container">
             <div class="counter-items">
@@ -234,7 +248,10 @@
             </div>
         </div>
     </section>
-    <section class="client-feedback">
+    <!-- End counter -->
+
+    <!-- start client -->
+    <section class="client">
         <div class="container">
             <h2 class="sec-head">Client's Feedback</h2>
             <div class="card">
@@ -261,14 +278,19 @@
             <button class="dot2"></button>
         </div>
     </section>
-    <section class="our-blog">
+    <!-- End client -->
+
+    <!-- start blog -->
+    <section class="blog">
         <div class="container">
-            <div class="blog">
+            <div>
                 <h2 class="sec-head">Our Blog</h2>
                 <div class="blog-items">
                     <div class="blog-item">
                         <div class="item-bg">
-                            <div class="blog-image"><img src="images/blog/1.jpg" alt=""></div>
+                            <div class="blog-image">
+                                <img src="images/blog/1.jpg" alt="">
+                            </div>
                             <div class="blog-content">
                                 <div>23 November, 2015</div>
                                 <h3><a href="#"> Web Design Blog Post</a></h3>
@@ -316,7 +338,10 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <!-- End blog -->
+
+    <!-- start contact -->
+    <section class="contact">
         <div class="container">
             <h2 class="sec-head">Contact Us</h2>
             <form action="">
@@ -328,6 +353,9 @@
             </form>
         </div>
     </section>
+    <!-- End contact -->
+
+    <!-- start footer -->
     <footer>
         <div class="continer">
             <div class="footer-icons">
@@ -339,6 +367,8 @@
             <div class="copy-right">Copy Right 2018 © By Theme-fair All Rights Reserved</div>
         </div>
     </footer>
+    <!-- End footer -->
+
 </body>
 
 </html>
